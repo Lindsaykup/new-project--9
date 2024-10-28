@@ -25,9 +25,10 @@ function draw() {
 	player.x = constrain(player.x, 0, width);
 	// Create falling stars
 	if (frameCount % 30 === 0) {
+
 		let star = new Sprite(random(width), 0, 20, 20);
-		star.color = color("yellow");
-		star.speed = 5;
+		star.color = color("pink");
+		star.vel.y = 5;
 		stars.add(star);
 	  }
 	
